@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid grey;
+        }
+
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color: rgb(177, 186, 188);
+            clear: left;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        /* Style for the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        article {
+            margin-left: 170px;
+            border-left: 1px solid grey;
+            padding: 1em;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        th a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* CSS for resizing images */
+        header img, article img {
+            max-width: 100%; /* Ensures images fit within their containers */
+            height: auto;    /* Keeps aspect ratio */
+        }
+
+        /* Specific sizes for the images */
+        header img {
+            width: 300px; /* Smaller width for header image */
+            height: auto;
+        }
+
+        article img {
+            width: 500px; /* Smaller width for article image */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>ENGINEERING BRANCHES</h1>
+        <img src="mymetal.jpg" alt="METALLURGY ENGINEERING" width="300" height="auto">
+    </header>
+
+    <table>
+        <tr>
+            <th><a href="file:///C:/Users/sai/Desktop/HOMEPAGENEW.html" class="current">HOME</a></th>
+            <th><a href="file:///C:/Users/sai/Desktop/AAP123/aboutus.html" class="current">ABOUT US</a></th>
+            <th><a href="C:/Users/sai/Desktop/AAP123/metimg.HTML">IMAGES</a></th>
+            <th><a href="file:///C:/Users/sai/Desktop/contact.html" class="current">CONTACTS</a></th>
+        </tr>
+    </table>
+
+    <nav>
+        <ul>
+            <li class="first"><a href="file:///C:/Users/sai/Desktop/HOMEPAGENEW.HTML" target="_blank">METALLURGY ENGINEERING</a></li>
+
+            <!-- Dropdown Menu -->
+            <li class="dropdown">
+                <a href="#">Other Branches</a>
+                <div class="dropdown-content">
+                    <a href="#">Mechanical Engineering</a>
+                    <a href="#">Civil Engineering</a>
+                    <a href="#">Computer Science Engineering</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>METALLURGY ENGINEERING</h1>
+        <img src="Metallurgy-2.jpg" alt="METALLURGY ENGINEERING" width="500" height="auto">
+        <p>Metallurgy engineering is a domain of materials science and engineering that studies the physical and chemical behavior of metallic elements, their inter-metallic compounds, and their mixtures, which are called alloys. Metallurgy is used to separate metals from their ore.</p>
+    </article>
+
+    <footer>copyright &copy; Ravindra Vivek Shubham</footer>
+
+</div>
+
+</body>
+</html>
